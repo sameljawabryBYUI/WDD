@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whitewater Rafting Vacations | Dry Oar Boating | Home</title>
+</head>
+<body>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/purpleraft.png" alt="Dry Oar Logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Page 2</a>
+            <a href="site-plan-rafting.html">Site Plan</a>
+            <a href="contactus.html">Contact Us</a>
+        </nav>
+    </header>
+    <div id="hero">
+        <div id="hero-box">
+            <img id="hero-img" src="images/hero.png" alt="People enjoying white water rafting">
+        </div>
+        <section id="hero-msg">
+            <h1 class="home-title">Have An Adventure</h1>
+            <h4>Make Memories with Dry Oar </h4>
+            <div class='button-box'>
+                <a class='book' href="contactus.html">Book Now</a>
+            </div>
+        </section>
+    </div>
+    <main class="home-grid">
+    
+    </main>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>  <main class="home-grid">
+    <section class="rivers-card">
+        <img class="card-img" src="images/rivers.jpg" alt="river in forest">
+        <img class="icon" src="images/river_icon.png" alt="river icon">
+        <h2>Rivers</h2>
+    </section>
+    <section class="camping-card">
+        <img class="card-img" src="images/camping.jpg" alt="tent in mountains">
+        <img class="icon" src="images/fire_icon.png" alt="fire icon">
+        <h2>Camping</h2>
+    </section>
+    <section class="rapids-card">
+        <img class="card-img" src="images/rapids.jpg" alt="rafting boat">
+        <img class="icon" src="images/oars.png" alt="oars icon">
+        <h2>Rapids</h2>
+    </section>
+    <img class="mountains" src="images/mountains.jpg" alt="Misty mountains">
+    <section class="msg">
+        <h2>More Than Just The Thrill</h2>
+        <p>Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks; it's way more than just the rapids. It's a great way to get away from it all and relax amongst all the beauty of the great outdoors. </p>
+        <a class='join' href="rivers.html">Join Us</a>
+    </section>
+</main>
+</main>
+<footer>
+    <p>Dry Oar &copy; 2023 - Samar Mohammed</p>
+    <p><a href="site-plan-rafting.html">Site Plan</a></p>
+    <p><a href="contactus.html">Contact Us</a></p>
+    <div class="social">
+        <a href="https://facebook.com">
+            <img src="images/facebook.png" alt="fb icon">
+        </a>
+        <a href="https://twitter.com">
+            <img src="images/twitter.png" alt="twitter icon">
+        </a>
+        <a href="https://instagram.com">
+            <img src="images/instagram.png" alt="instagram icon">
+        </a>
+    </div>
+</footer>

@@ -7,6 +7,8 @@
  
   #logo_link { 
     padding-top: 5px;
+    justify-self: center;
+    align-self: center;
   }
   nav a {
     text-align: center;
@@ -16,10 +18,19 @@
   #background {
     height: 725px;
     background-color: #fd96a9;
+    grid-column: 1 / span 11;
+     grid-row: 4 / span 6;
   }
+  
+#hero-msg {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: 100px;
+}
   #hero-msg h1,
   #hero-msg h4 {
     text-align: center;
+    color: #f62dae;
   }
   
   .button-box {
@@ -33,13 +44,16 @@
   nav a {
     background-color: white;
     color: #f62dae;
+    
+    text-align: center;
+    padding: 35px;
     text-decoration: none;
 }
 .home-title{
   font-family: 'Ysabeau', 'Luckiest Guy', Arial, sans-serif;
   font-size: 2em;
   margin-top: 10px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
     color: #f62dae;
 }
   body {
@@ -48,7 +62,7 @@
       font-size: 22px;
       margin: 0;
       padding: 0;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
     color: #f62dae;
   }
 
@@ -59,6 +73,8 @@
   
   header {
     background-color: white;
+    display: grid;
+    grid-template-columns: 150px auto;
   }
   
   nav a:hover {
@@ -86,31 +102,38 @@
   .msg {
     line-height: 1.5em;
     padding: 35px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
     color: #f62dae;
+    grid-column: 6 / span 5;
+    grid-row: 6 / span 1;
+      box-shadow: 5px 5px 10px #6f7364;
   }
   .msg p {
     font-size: 0.8em;
     padding-bottom: 15px;
-    background-color: white;
-    color: #f62dae;
+    background-color: rgba(255, 255, 255, 0);
+    color: #ebebeb;
   }
   .msg h2{
-    background-color: white;
-    color: #f62dae;
+    background-color: rgba(255, 255, 255, 0);
+    color: #fffeff;
   }
   h4 {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
     color: #f62dae;
   }
   
   footer {
-    background-color: white;
+   
     color: #f62dae;
     padding: 25px 50px;
-    margin-top: 200px;
-
+      background-color: #6f7364;
+      margin-top: 200px; 
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
   }
+  
   
   footer a {
     color: #c0c999;
@@ -145,14 +168,118 @@
   footer .social img {
     padding-top: 15px;
   }
+  .home-grid {
+    text-align: center;
+  }
   .rivers-card,
-.camping-card,
-.rapids-card {
-  margin: 200px 0;
-}
+  .camping-card,
+  .rapids-card {
+    margin: 10px 0;
+    display: inline-block;
+    width:20%; 
+  }
 .card-img {
   border: 10px solid #fd96a9;
+  transition: transform .5s;
+  box-shadow: 5px 5px 10px #6f7364;
+  
+}
+.card-img, .mountains {
+  width: 100%;
 }
 main section img {
   box-sizing: border-box;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+#hero {
+  display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px; 
+}
+             
+
+#hero-box {
+  grid-column: 1/4;
+  grid-row: 1/3;
+  z-index: -1;
+}
+.rivers-card {
+  grid-column: 2 / span 3;
+  grid-row: 2 / span 1;
+}
+
+.camping-card {
+  grid-column: 5 / span 3;
+  grid-row: 2 / span 1;
+}
+
+.rapids-card {
+  grid-column: 8 / span 3;
+  grid-row: 2 / span 1;
+}
+.mountains {
+  grid-column: 2 / span 6;
+  grid-row: 5 / span 4;
+  width: 40%;
+}
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+.mountains {
+  width: 40%;
+  grid-column: 2/7;
+  grid-row: 5/8;
+  box-shadow: 5px 5px 10px #6f7364;
+}
+.msg {
+  background-color: #6f7364;
+  padding: 35px;
+  grid-column: 6/10;
+  grid-row: 6/7;
+  box-shadow: 5px 5px 10px #6f7364;
+}
+@media screen and (max-width: 900px) {
+  #hero, .home-grid {
+      display: block;
+      height: auto;
+  }
+  nav, footer {
+      flex-direction: column;
+  }
+  nav a {
+      display: block;
+      padding: 15px;
+  }
+  #hero {
+      margin-top: 0;
+  }
+  #hero-msg {
+      margin-top: 0;
+  }
+  #hero-msg h4 {
+      display: none;
+  }
+  .home-title {
+      font-size: 25px;
+      color: #6f7364;
+  }
+  .rivers-card, .camping-card, .rapids-card { 
+      margin: 50px auto;
+      width: 60%;
+  }
+  #background {
+      display: none;
+  }
+  .mountains, .msg {
+      width: 80%;
+      display: block;
+      margin: 0 auto;
+  }
+  footer {
+      margin-top: 25px;
+  }
 }

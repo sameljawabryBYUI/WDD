@@ -77,7 +77,20 @@ nav a {
   color: #111111;
   padding: 10px;
   cursor: pointer;
-  grid-column: span 3; /* Fixed the grid-column property */
+  grid-column: span 3; 
+}
+.subscribe-tab {
+  background-color: #ffd6d6;
+  color: #111111;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sign-in-tab {
+  background-color: #ffd6d6;
+  color: #111111;
+  padding: 10px;
+  cursor: pointer;
 }
 
 nav a:hover {

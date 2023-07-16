@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Grids 1 - 5 */
+  .grid1 {
+    padding: 2em 0;
+  }
+  
+  .grid1 h1 {
+    font-size: 24px;
+  }
+  
+  .grid2,
+  .grid4,
+  section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .grid2 h2,
+  .grid4 h2,
+  section h2 {
+    font-size: 20px;
+  }
+  
+  .grid3,
+  .grid6,
+  .grid7 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 0 1em;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .grid3 h3,
+  .grid6 h3,
+  .grid7 h3 {
+    font-size: 18px;
+  }
+  
+  form {
+    margin-top: 1em;
+  }
+  
+  legend {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  fieldset > div {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 1rem;
+    align-items: center;
+  }
+  
+  label {
+    text-align: right;
+  }
+  
+  input {
+    width: 100%;
+  }
+  
+  button {
+    grid-column: 1 / span 2;
+    width: 100%;
+  }
+  
+
+  .grid1,
+  .grid2,
+  .grid3,
+  .grid4,
+  section,
+  .grid6,
+  .grid7 {
+    padding: 1rem;
+  }
+  
+ 
+  .grid1 h1 {
+    font-size: 24px;
+  }
+  
+  .grid2 h2,
+  .grid4 h2,
+  section h2 {
+    font-size: 20px;
+  }
+  
+  .grid3 h3,
+  .grid6 h3,
+  .grid7 h3 {
+    font-size: 18px;
+  }
+  
+ 
+  .grid1 {
+    background-color: #f8f8f8;
+    color: #333333;
+  }
+  
+  .grid2 {
+    background-color: #eaeaea;
+    color: #333333;
+  }
+  
+  .grid3 {
+    background-color: #f5f5f5;
+    color: #333333;
+  }
+  
+  .grid4 {
+    background-color: #eaeaea;
+    color: #333333;
+  }
+  
+  section {
+    background-color: #f5f5f5;
+    color: #333333;
+  }
+  
+  .grid6 {
+    background-color: #000000c9;
+    color: #1b1d8a;
+  }
+  
+  .grid7 {
+    background-color: #eaeaea;
+    color: #333333;
+  }
+  
